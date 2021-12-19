@@ -138,9 +138,8 @@ header input{
 }
 
 
-
-
 @media screen and (max-width: 700px) {
+
     .topnav a, .topnav input[type=text] {
         float: none;
         display: block;
