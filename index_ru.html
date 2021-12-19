@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MKCinema</title>
+    <link rel="stylesheet" href="st.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776; open</span>
+        <img src="../icon/day-and-night-3.png" alt="" onclick="darkMode()">
+        <img src="../icon/sun-2.png" alt="" onclick="lightMode()">
+        <div class="logo">
+            <a href="index_en.html" ><h1>Moje kino</h1></a>
+        </div>
+    </div>
+
+     <div class="upbar">
+
+
+         <div class="dropdown">
+             <button class="dropbtn"><a href="#">Films</a></button>
+        <div class="dropdown-content column row">
+
+            <a href="#">Westerns</a>
+            <a href="#">Art House</a>
+            <a href="#">Chrime</a>
+        </div>
+         </div>
+
+        <div class="dropdown">
+        <button class="dropbtn">Serial</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div>
+         <div class="dropdown">
+         <button class="dropbtn">Cartoon</button>
+         <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+         </div>
+    </div><div class="dropdown">
+        <button class="dropbtn">Anime</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+         <div class="dropdown, lan">
+
+             <a href="index_en.html" style="color: #7979d2">Eng</a>
+             <a href="index_ru.html">Ru</a>
+             <a href="index_uk.html" >Uk</a>
+
+         </div>
+
+    </div>
+
+</header>
+<div class="films">
+    <div class="box">
+        <a href="/movies/whiplash.html"><img src="/posters/whiplash.jpg" alt="" class="hover-shadow"></a>
+    </div>
+
+    <div class="box">
+        <a href="/movies/whiplash.html"><img src="/posters/whiplash.jpg" alt="" class="hover-shadow"></a>
+    </div>
+    <div class="box">
+        <a href="/movies/whiplash.html"><img src="/posters/whiplash.jpg" alt="" class="hover-shadow"></a>
+    </div>
+    <div class="box">
+        <a href="/movies/whiplash.html"><img src="/posters/whiplash.jpg" alt="" class="hover-shadow"></a>
+    </div>
+</div>
+
+
+
+<footer>
+    <h1></h1>
+
+</footer>
+<script>
+    function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+    }
+    function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+    }
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+</body>
+</html>

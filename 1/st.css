@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    position: center;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*Start--Dark mode*/
+.dark-mode {
+    background-color: #212121;
+    color: white;
+}
+.light-mode {
+    background-color: rgba(182, 179, 179, 0.88);
+    color: black;
+}
+/* Star*/
+.logo img{
+
+    width: 3%;
+    float: right;
+    cursor: pointer;
+}
+.logo{
+    text-align: center;
+    float: top;
+    color: blue;
+    font-family: Marker Felt, fantasy;
+
+}
+.icon{
+    cursor: pointer;
+    /*End--Dark mode*/
+
+}
+header{
+    position: center;
+    margin: auto;
+}
+
+header a{
+    text-decoration: none;
+    color: #2196F3;
+    cursor: pointer;
+}
+
+header input{
+    margin-top: 0.8%;
+    float: right;
+}
+.lan{
+right: 10px;
+float: right;
+    position: relative;
+    display: inline-block;
+}
+/* Start--film,serial,bajki */
+
+
+.upbar{
+
+    width: 100%;
+    background: #7979d2;
+    z-index: 5;
+    float: top;
+}
+.navbar {
+    margin: auto;
+    width: 100%;
+}
+
+
+
+/*End--- film, serial, bajki*/
+
+.films{
+    margin-top: 100px;
+    margin: auto;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+.box{
+    display: inline;
+
+}
+.box img{
+    width: 20%;
+    height: 20%;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* start 1*/
+
+.dropbtn {
+    background:none ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+
+    position: center;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    z-index: 1;
+
+    box-sizing: border-box
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 500px;
+
+}
+
+.left-conten{
+    float: right;
+    display: inline;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.column {
+    float: left;
+
+    padding: 10px;
+
+    box-sizing: border-box/* Should be removed. Only for demonstration */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sidenav {
+    position: absolute;
+    opacity: 0;
+}
+.logo span{
+    position: absolute;
+    opacity: 0;
+}
+/* End 1 */
+
+
+
+
+
+@media screen and (max-width: 10000px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        background-color: red;
+        color: black;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .lan {
+        font-size: 16px;
+    }
+
+.logo img{
+    width: 6%;
+}
+.films img{
+    width: 40%;
+}
+
+.logo span{
+    position: fixed;
+
+}
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+
+}
