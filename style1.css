@@ -10,8 +10,7 @@ body {
     color: black;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    width: 75%;
+
 }
 /*Start--Dark mode*/
 .dark-mode {
@@ -23,15 +22,22 @@ body {
     color: black;
 }
 /* Star*/
+.logo img{
+
+    width: 3%;
+    float: right;
+    cursor: pointer;
+}
 .logo{
- text-align: center;
+    text-align: center;
     float: top;
     color: blue;
     font-family: Marker Felt, fantasy;
+
 }
 .icon{
     cursor: pointer;
-/*End--Dark mode*/
+    /*End--Dark mode*/
 
 }
 header{
@@ -39,12 +45,6 @@ header{
     margin: auto;
 }
 
-header img{
-
-    width: 5%;
-    float: right;
-    cursor: pointer;
-}
 header a{
     text-decoration: none;
     color: #2196F3;
@@ -56,79 +56,40 @@ header input{
     float: right;
 }
 .lan{
-    margin-top: 11px;
-    margin-left: 62%;
-    position: absolute;
-    font-size: 20px;
-
+right: 10px;
+float: right;
+    position: relative;
+    display: inline-block;
 }
 /* Start--film,serial,bajki */
 
 
+.upbar{
+
+    width: 100%;
+    background: #7979d2;
+    z-index: 5;
+    float: top;
+}
 .navbar {
-    overflow: hidden;
-    background-color: #333;
+    margin: auto;
     width: 100%;
 }
 
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: #2196F3;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-.subnav {
-    float: left;
-    overflow: hidden;
-}
 
-.subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #2196F3;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: rgba(0, 0, 0, 0.22);
-}
-
-.subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: rgb(133, 57, 57);
-    width: 100%;
-    z-index: 1;
-}
-
-.subnav-content a {
-    color: white;
-    text-decoration: none;
-}
-
-.subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-}
-
-.subnav:hover .subnav-content {
-    display: block;
-}
 /*End--- film, serial, bajki*/
 
 .films{
-    margin-top: 10px;
+    margin-top: 100px;
+    margin: auto;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 8px;
 }
 .box{
     display: inline;
+
 }
 .box img{
     width: 20%;
@@ -137,9 +98,88 @@ header input{
     margin-right: 40px;
 }
 
+img.hover-shadow {
+    transition: 0.3s;
+}
 
-@media screen and (max-width: 700px) {
+.hover-shadow:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* start 1*/
 
+.dropbtn {
+    background:none ;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+
+    position: center;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    z-index: 1;
+
+    box-sizing: border-box
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 500px;
+
+}
+
+.left-conten{
+    float: right;
+    display: inline;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.column {
+    float: left;
+
+    padding: 10px;
+
+    box-sizing: border-box/* Should be removed. Only for demonstration */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sidenav {
+    position: absolute;
+    opacity: 0;
+}
+.logo span{
+    position: absolute;
+    opacity: 0;
+}
+/* End 1 */
+
+
+
+
+
+@media screen and (max-width: 1000px) {
     .topnav a, .topnav input[type=text] {
         float: none;
         display: block;
@@ -163,14 +203,54 @@ header input{
     }
 
     .lan {
-        margin-top: 11px;
-        margin-left: 82%;
-
+        font-size: 16px;
     }
 
-    header img {
+.logo img{
+    width: 6%;
+}
+.films img{
+    width: 40%;
+}
 
-        width: 7%;
+.logo span{
+    position: fixed;
+
+}
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
     }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
 
 }
